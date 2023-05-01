@@ -1,0 +1,32 @@
+* {
+  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: rgba(187, 115, 255, 0.65);
+}
+
+/*  */
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.avatar img {
+  /* padding: 5rem; */
+
+  row-gap: 5rem;
+
+  align-items: center;
+  border-radius: 200px;
+  background-color: white;
+}
+
+button {
+  color: white;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 1px solid white;
+  margin: 2rem;
+}

@@ -1,32 +1,232 @@
-* {
+/* Default styles */
+*{
+  background-color: #a983f0;
+   font-family: 'Poppins', sans-serif;
+   
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  background-color: rgba(187, 115, 255, 0.65);
 }
 
-/*  */
-
-.title {
+h1 {
+  font-size: 36px;
   text-align: center;
-  color: white;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 5rem;
+  position: relative;
+  top: -1rem;
+  z-index: 1;
+  width: 33rem;
+  margin-left: 8rem;
+  
 }
 
 .avatar img {
-  /* padding: 5rem; */
-
-  row-gap: 5rem;
-
-  align-items: center;
-  border-radius: 200px;
-  background-color: white;
+  max-width: 100%;
+  height: auto;
+  border-radius: 9rem;
+  padding: 2rem;
+  box-shadow: inset -1px 3px 7px 0px rgb(0 0 0 / 45%), inset 0 -2px 5px rgba(255, 255, 255, 0.5)
 }
 
-button {
-  color: white;
-  width: 7rem;
-  height: 2rem;
+.detalis {
+  
+  padding: 4rem 13rem 5rem 13rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   border-radius: 2rem;
-  border: 1px solid white;
-  margin: 2rem;
+  color: black;
+  position: relative;
+  top: -6rem;
+  box-shadow: inset -1px 3px 7px 0px rgb(0 0 0 / 45%), inset 0 -2px 5px rgba(255, 255, 255, 0.5)
+  
+}
+
+.detalis img {
+  width: 50px;
+  height: auto;
+  /* margin-top:3rem;
+  margin-bottom: 3rem; */
+  align-items: center;
+  position: absolute;
+  left: 3rem;
+  background-color: white;
+  box-shadow: inset -1px 3px 7px 0px rgb(0 0 0 / 45%), inset 0 -2px 5px rgba(255, 255, 255, 0.5)
+}
+
+.detalis input{
+  margin-left: -3rem;
+  width: 26rem;
+  margin-top: 2rem;
+  
+}
+
+
+.assets{
+  background-color: white;
+  padding: 2rem;
+  
+  
+}
+
+.assets img {
+  box-shadow: inset -1px 3px 7px 0px rgb(0 0 0 / 45%), inset 0 -2px 5px rgba(255, 255, 255, 0.5)
+}
+/* 
+.inset{
+  box-shadow: inset -1px 3px 7px 0px rgb(0 0 0 / 45%), inset 0 -2px 5px rgba(255, 255, 255, 0.5)
+} */
+
+/* 
+.detalis span {
+  margin-right: 10px;
+
+} */
+
+.gender{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  margin-left: 15rem;
+  
+  
+}
+
+* button {
+  background-color:blueviolet;
+  width: 7rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: inset -1px 3px 7px 0px rgb(0 0 0 / 45%), inset 0 -2px 5px rgba(255, 255, 255, 0.5)
+  
+}
+
+.calci{
+  margin-left: 5rem;
+  margin-top: 3rem;
+  /* box-shadow: inset -1px 3px 7px 0px rgb(0 0 0 / 45%), inset 0 -2px 5px rgba(255, 255, 255, 0.5) */
+}
+
+input{
+  background-color:blueviolet;
+  width: 7rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset -1px 3px 7px 0px rgb(0 0 0 / 45%), inset 0 -2px 5px rgba(255, 255, 255, 0.5)
+}
+
+
+::placeholder{
+  color: white;
+}
+
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: fit-content;
+    margin: 32px auto;
+    margin-left: 0rem;
+    padding: 0px;
+    margin-right: -2rem;
+}
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    width: 50rem;
+  }
+
+  .avatar img {
+    max-width: 50%;
+  }
+
+  .detalis span {
+    margin-right: 5px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .detalis input {
+    
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 1000px;
+    margin: 38px auto;
+    padding: 31px;
+  }
+  h1 {
+    font-size: 41px;
+    text-align: center;
+    width: 40rem;
+  }
+  
+.gender{}
+  .avatar img {
+    max-width: 80%;
+  }
+  .avatar{
+    margin-left: 3rem;
+  }
+.detalis{
+  padding: 4rem 30rem 1rem 9rem;
+}
+  .detalis span {
+    margin-right: 0;
+  }
+
+  .detalis input {
+    margin-bottom: 44px;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 14px 40px;
+    margin-right: 16rem;
+    margin-left: -9rem;
+  }
+  .calci{
+    margin-top: 6rem;
+    width: 13rem;
+    margin-left: 2rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  /* .assets img{
+    margin-top: 2rem;
+    height: 6rem;
+    width: 7rem;
+  } */
 }

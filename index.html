@@ -1,46 +1,57 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title class='title'>BMI CALCULATOR</title> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-<!-- <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@200&family=Mulish:ital,wght@1,200&family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
-<link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-<div class="container">
-
-    <h1 style="color:white">BMI Calculator </h1>
-    <div class="gender"id="gender"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="title">BMI CALCULATOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@200&family=Mulish:ital,wght@1,200&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: white">BMI CALCULATOR</h1>
+      <div class="gender" id="gender">
         <button id="female">Female</button>
         <button id="male">Male</button>
+      </div>
+      <div class="avatar" id="avatar">
+        <img src="assets/girl.jpg" alt="female" width="200px" />
+        <img src="assets/boy.jpg" alt="male" width="200px" />
+      </div>
+
+      <div class="detalis" id="details">
+
+        <div class="inset">
+
+            <div class="assets">
+                <img
+                  src="assets/weight.jpg"
+                  alt="weight"
+                  style="margin-top: 2rem"
+                />
+                <input type="number" placeholder="Weight in KGs" />
+                <br />
+      
+                <img src="assets/height.jpg" alt="height" style="margin-top: 2rem" />
+                <input type="number" placeholder="Height in FTs " />
+                <br />
+                <img src="assets/age.jpg" alt="age" style="margin-top: 2rem" />
+                <!-- <label for="">afe</label> -->
+                <input type="number" placeholder="Age in YEARs" />
+                <br />
+                <button class="calci"id="calculate">CALCULATE</button>
+              </div>
+        </div>
+
+       
+      </div>
     </div>
-    <div class="avatar" id="avatar">
-        <img src="/assets/girl.jpg" alt="female" width="200px">
-        <img src="/assets/boy.jpg" alt="male" width="200px">
-    </div>
 
-
-    <div class="detalis" id="details">
-      <img src="/assets/weight.jpg" alt="weight">
-      <span>weight</span> <span><input type="number" placeholder="65kg"></span> <span><button disabled>KGs</button></span>
-  <br>
-      <img src="/assets/height.jpg" alt="height">
-      <span>weight</span> <span><input type="number" placeholder="6FTs"></span> <span><button disabled>FTs</button></span>
-  <br>
-      <img src="/assets/age.jpg" alt="age">
-      <span>weight</span> <span><input type="number" placeholder="21yrs"></span> <span><button disabled>YEARs</button></span>
-  <br>
-     <button id="calculte">CALCULATE</button>
-  
-    </div>
-
-
-</div>
-
- 
-    <script src=""></script>
-</body>
+    <script src="bmi.js"></script>
+  </body>
 </html>

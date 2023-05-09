@@ -36,3 +36,14 @@ let calculate = document.getElementById("calculate");
 calculate.addEventListener("click", bmi);
 
 
+
+
+
+
+
+
+
+
+
+
+

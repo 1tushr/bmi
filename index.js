@@ -34,16 +34,3 @@ function bmi() {
 // call function on click of the button
 let calculate = document.getElementById("calculate");
 calculate.addEventListener("click", bmi);
-
-
-
-
-
-
-
-
-
-
-
-
-
